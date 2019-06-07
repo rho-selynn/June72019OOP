@@ -7,8 +7,8 @@
 #include "Rectangle.h"
 #include <string>
 
-int w;
-int l;
+float w;
+float l;
 std::string color;
 int choice;
 
@@ -18,23 +18,24 @@ int main() {
 	//std::cout << "3. Triangle" << std::endl;
 	std::cin >> choice;
 
-	//switch (choice) {
-	//case 1:
-	std::cout << "Width?" << std::endl;
-	std::cin >> w;
-	std::cout << "Length?" << std::endl;
-	std::cin >> l;
+	switch (choice) {
+	case 1:
+		std::cout << "Width?" << std::endl;
+		std::cin >> w;
+		std::cout << "Length?" << std::endl;
+		std::cin >> l;
 
-	Rectangle aRec(w, l);
-	std::cout << "Area: " << aRec.returnArea() << std::endl;
-	
-	std::cout << "Here's a color!" << std::endl;
-	Rectangle someColor();
-	std::cout << aRec.returnColor() << std::endl;
-	//break;
+		Rectangle aRec(w, l);
+		std::cout << "Area: " << aRec.returnArea() << std::endl;
 
-	//case 2:
+		std::cout << "Here's a color!" << std::endl;
+		Rectangle someColor();
+		std::cout << aRec.returnColor() << std::endl;
+		break;
 
+
+		//case 2:
+	}
 
 	system("PAUSE");
 	return 0;
